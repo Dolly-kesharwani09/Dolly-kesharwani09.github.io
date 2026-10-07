@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Dolly-kesharwani09/Dolly-kesharwani09.github.io
   branch: main
+  base_url: https://dolly-cms-auth.dollykesharwani09.workers.dev
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
