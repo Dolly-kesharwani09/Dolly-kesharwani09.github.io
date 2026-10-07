@@ -1,0 +1,296 @@
+{
+  "works": [
+    {
+      "title": "Sankalp Hospital",
+      "client": "Sankalp Hospital",
+      "type": "Bi-fold brochure · Print · Gujarati + English",
+      "category": "Print",
+      "image": "assets/sankalp-brochure.jpeg",
+      "pages": [
+        "assets/sankalp-brochure.jpeg"
+      ],
+      "featured": true,
+      "order": 1
+    },
+    {
+      "title": "Vedamrut Ayurveda",
+      "client": "Vedamrut Ayurveda",
+      "type": "Panchakarma clinic brochure · Gujarati + English",
+      "category": "Print",
+      "image": "assets/vedamrut-brochure.jpeg",
+      "pages": [
+        "assets/vedamrut-brochure.jpeg"
+      ],
+      "featured": false,
+      "order": 2
+    },
+    {
+      "title": "Chaitra Navratri",
+      "client": "Chaitra Navratri",
+      "type": "Festival social media post · Digital",
+      "category": "Social",
+      "image": "assets/navratri-post.jpeg",
+      "pages": [
+        "assets/navratri-post.jpeg"
+      ],
+      "featured": false,
+      "order": 3
+    },
+    {
+      "title": "PearlDent Dental Care",
+      "client": "PearlDent Dental Care",
+      "type": "Dental clinic brochure · Print · Surat",
+      "category": "Print",
+      "image": "assets/pearldent-brochure.jpeg",
+      "pages": [
+        "assets/pearldent-brochure.jpeg"
+      ],
+      "featured": false,
+      "order": 4
+    },
+    {
+      "title": "The Dermaesthetic Skin",
+      "client": "The Dermaesthetic Skin",
+      "type": "Logo design · Brand identity · Skin clinic",
+      "category": "Branding",
+      "image": "assets/dermaesthetic-logo.jpeg",
+      "pages": [
+        "assets/dermaesthetic-logo.jpeg"
+      ],
+      "featured": false,
+      "order": 5
+    },
+    {
+      "title": "Ram Navami",
+      "client": "Ram Navami",
+      "type": "Festival social media post · Digital",
+      "category": "Social",
+      "image": "assets/ramnavami-post-2.jpeg",
+      "pages": [
+        "assets/ramnavami-post-2.jpeg"
+      ],
+      "featured": false,
+      "order": 6
+    },
+    {
+      "title": "Pancha Karma",
+      "client": "Pancha Karma",
+      "type": "Inner brochure spread · Ayurvedic treatments · Gujarati",
+      "category": "Print",
+      "image": "assets/panchakarma-brochure.jpeg",
+      "pages": [
+        "assets/panchakarma-brochure.jpeg"
+      ],
+      "featured": false,
+      "order": 7
+    },
+    {
+      "title": "World Cancer Day",
+      "client": "World Cancer Day",
+      "type": "Awareness social post · Digital",
+      "category": "Social",
+      "image": "assets/worldcancerday-post.jpeg",
+      "pages": [
+        "assets/worldcancerday-post.jpeg"
+      ],
+      "featured": false,
+      "order": 8
+    },
+    {
+      "title": "My Eelaaj",
+      "client": "My Eelaaj",
+      "type": "Healthcare magazine spread · Cardiology · Gujarati + English",
+      "category": "Print",
+      "image": "assets/myeelaaj-spread.jpeg",
+      "pages": [
+        "assets/myeelaaj-spread.jpeg"
+      ],
+      "featured": false,
+      "order": 9
+    },
+    {
+      "title": "Shashwat Cardiac & Cancer Care",
+      "client": "Shashwat Cardiac & Cancer Care",
+      "type": "Clinic promotional flyer · Print · Surat",
+      "category": "Print",
+      "image": "assets/shashwat-flyer.jpeg",
+      "pages": [
+        "assets/shashwat-flyer.jpeg"
+      ],
+      "featured": false,
+      "order": 10
+    },
+    {
+      "title": "ASOT Solar — Product Inserts",
+      "client": "ASOT Solar",
+      "type": "Amazon customer thank-you card & packaging insert · 2 pages · Print",
+      "category": "Print",
+      "image": "assets/asot-thankyou-card.jpeg",
+      "pages": [
+        "assets/asot-thankyou-card.jpeg",
+        "assets/asot-packaging-card.jpeg"
+      ],
+      "featured": false,
+      "order": 11
+    },
+    {
+      "title": "Amoha Couture — Branded Envelope",
+      "client": "Amoha Couture",
+      "type": "Stationery design · Branded envelope · Print",
+      "category": "Print",
+      "image": "assets/amoha-envelope.jpeg",
+      "pages": [
+        "assets/amoha-envelope.jpeg"
+      ],
+      "featured": false,
+      "order": 12
+    },
+    {
+      "title": "Dr. Nirav's Homeopathic Healing",
+      "client": "Dr. Nirav's Homeopathic",
+      "type": "Clinic branded envelope · Print",
+      "category": "Print",
+      "image": "assets/drnirav-envelope.jpeg",
+      "pages": [
+        "assets/drnirav-envelope.jpeg"
+      ],
+      "featured": false,
+      "order": 13
+    },
+    {
+      "title": "Omera Clinic",
+      "client": "Omera Clinic",
+      "type": "Skin, hair & body clinic bi-fold brochure · Print",
+      "category": "Print",
+      "image": "assets/omera-brochure.jpeg",
+      "pages": [
+        "assets/omera-brochure.jpeg"
+      ],
+      "featured": false,
+      "order": 14
+    },
+    {
+      "title": "Ajmera Trends — Wall Calendar",
+      "client": "Ajmera Trends",
+      "type": "Fashion brand wall calendar · February & April 2026 · 2 pages · Print",
+      "category": "Print",
+      "image": "assets/ajmera-calendar-feb.jpeg",
+      "pages": [
+        "assets/ajmera-calendar-feb.jpeg",
+        "assets/ajmera-calendar-apr.jpeg"
+      ],
+      "featured": false,
+      "order": 15
+    },
+    {
+      "title": "Dr. Sanjay Vaghani Cardiology",
+      "client": "Dr. Sanjay Vaghani",
+      "type": "Cardiologist business card · Front & back · Branding",
+      "category": "Branding",
+      "image": "assets/drvaghani-businesscard.jpeg",
+      "pages": [
+        "assets/drvaghani-businesscard.jpeg"
+      ],
+      "featured": false,
+      "order": 16
+    },
+    {
+      "title": "Dr. Vasim's Advanced Medicine Hospital",
+      "client": "Dr. Vasim's Advanced Medicine",
+      "type": "Hospital brand business card · Front & back · Branding",
+      "category": "Branding",
+      "image": "assets/drvasim-businesscard.jpeg",
+      "pages": [
+        "assets/drvasim-businesscard.jpeg"
+      ],
+      "featured": false,
+      "order": 17
+    },
+    {
+      "title": "Pharmagic Pharmaceuticals",
+      "client": "Pharmagic Pharmaceuticals",
+      "type": "Pharmaceutical product catalogue sheet · Print",
+      "category": "Print",
+      "image": "assets/pharmagic-product-list.jpeg",
+      "pages": [
+        "assets/pharmagic-product-list.jpeg"
+      ],
+      "featured": false,
+      "order": 18
+    },
+    {
+      "title": "Akhand Anand Co-Op Bank — Calendar",
+      "client": "Akhand Anand Co-Op Bank",
+      "type": "Co-operative bank Gujarati calendar · August & September 2026 · 2 pages · Print",
+      "category": "Print",
+      "image": "assets/akhand-anand-calendar.jpeg",
+      "pages": [
+        "assets/akhand-anand-calendar.jpeg",
+        "assets/akhand-anand-calendar-sep.jpeg"
+      ],
+      "featured": false,
+      "order": 19
+    },
+    {
+      "title": "Derma Code by Dr. Parth",
+      "client": "Derma Code by Dr. Parth",
+      "type": "Dermatology clinic business card · Front & back · Branding",
+      "category": "Branding",
+      "image": "assets/dermacode-businesscard.jpeg",
+      "pages": [
+        "assets/dermacode-businesscard.jpeg"
+      ],
+      "featured": false,
+      "order": 20
+    },
+    {
+      "title": "Orin PV Materials",
+      "client": "Orin PV Materials",
+      "type": "Solar materials company business card · Front & back · Branding",
+      "category": "Branding",
+      "image": "assets/orin-businesscard.jpeg",
+      "pages": [
+        "assets/orin-businesscard.jpeg"
+      ],
+      "featured": false,
+      "order": 21
+    },
+    {
+      "title": "Prarthana Dental Clinic — Camp Poster",
+      "client": "Prarthana Dental Clinic",
+      "type": "Free dental check-up camp event poster · Gujarati · Social",
+      "category": "Social",
+      "image": "assets/prarthana-dental-poster.jpeg",
+      "pages": [
+        "assets/prarthana-dental-poster.jpeg"
+      ],
+      "featured": false,
+      "order": 22
+    },
+    {
+      "title": "Tricolour Hospitals — Wall Calendar",
+      "client": "Tricolour Hospitals",
+      "type": "Hospital wall calendar · February & April 2026 · 2 pages · Print",
+      "category": "Print",
+      "image": "assets/tricolour-calendar-feb.jpeg",
+      "pages": [
+        "assets/tricolour-calendar-feb.jpeg",
+        "assets/tricolour-calendar-apr.jpeg"
+      ],
+      "featured": false,
+      "order": 23
+    },
+    {
+      "title": "Anant Ayurveda Panchkarma Hospital",
+      "client": "Anant Ayurveda",
+      "type": "Ayurvedic hospital business card · Front & back · Branding",
+      "category": "Branding",
+      "image": "assets/anant-ayurveda-businesscard.jpeg",
+      "pages": [
+        "assets/anant-ayurveda-businesscard.jpeg"
+      ],
+      "featured": false,
+      "order": 24
+    }
+  ]
+}

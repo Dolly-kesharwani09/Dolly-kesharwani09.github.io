@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dolly Kesharwani — Visual Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div id="preloader-counter">0</div>
+      <div id="preloader-name">Dolly Kesharwani</div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor: Single outer element + inner child with centered arrow -->
+  <div id="cursor" aria-hidden="true">
+    <div id="cursor-inner">
+      <span id="cursor-arrow">&#8599;</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="nav-logo">DK<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#work" class="mag-target">Work</a></li>
+      <li><a href="#featured" class="mag-target">Featured</a></li>
+      <li><a href="#about" class="mag-target">About</a></li>
+      <li><a href="#contact" class="nav-cta mag-target">Contact</a></li>
+    </ul>
+    <button class="nav-burger mag-target" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track" id="heroMarqueeTrack">
+        <!-- Set A: 24 unique client items -->
+        <div class="marquee-item"><img src="assets/sankalp-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/omera-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/ajmera-calendar-feb.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/vedamrut-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drvaghani-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/pearldent-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/dermacode-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/panchakarma-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/prarthana-dental-poster.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/myeelaaj-spread.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/dermaesthetic-logo.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/orin-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/navratri-post.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/tricolour-calendar-feb.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/ramnavami-post-2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/shashwat-flyer.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/worldcancerday-post.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/anant-ayurveda-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/asot-thankyou-card.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/amoha-envelope.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drnirav-envelope.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drvasim-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/pharmagic-product-list.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/akhand-anand-calendar.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <!-- Set B: mirror for infinite loop -->
+        <div class="marquee-item"><img src="assets/sankalp-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/omera-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/ajmera-calendar-feb.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/vedamrut-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drvaghani-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/pearldent-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/dermacode-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/panchakarma-brochure.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/prarthana-dental-poster.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/myeelaaj-spread.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/dermaesthetic-logo.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/orin-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/navratri-post.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/tricolour-calendar-feb.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/ramnavami-post-2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/shashwat-flyer.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/worldcancerday-post.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/anant-ayurveda-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/asot-thankyou-card.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/amoha-envelope.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drnirav-envelope.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/drvasim-businesscard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/pharmagic-product-list.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        <div class="marquee-item"><img src="assets/akhand-anand-calendar.jpeg" alt="" loading="lazy" decoding="async" /></div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" id="heroEyebrow">Available for work</p>
+      <h1 class="hero-name" id="heroName">
+        <span class="hero-name-line hero-line-dolly" id="heroLine1">DOLLY</span>
+        <span class="hero-name-line hero-line-kesharwani accent-line" id="heroLine2">KESHARWANI</span>
+      </h1>
+      <p class="hero-subtitle" id="heroSubtitle"><span class="sub-line-1">Visual Designer</span> <span class="sub-sep">&nbsp;&middot;&nbsp;</span> <span class="sub-line-2">Branding, Print, Social, Motion</span></p>
+      <a href="#work" class="hero-cta mag-target" id="heroCta">
+        <span>View Work</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal-heading">Selected Work</span>
+        <h2 class="section-title reveal-heading">Crafted with <em>intention</em></h2>
+      </div>
+
+      <div class="filter-tabs" role="tablist" aria-label="Work categories">
+        <button class="tab active mag-target" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab mag-target" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+        <button class="tab mag-target" data-filter="print" role="tab" aria-selected="false">Print</button>
+        <button class="tab mag-target" data-filter="social" role="tab" aria-selected="false">Social</button>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <!-- Card 1 -->
+        <article class="work-card" data-category="print"
+          data-pages='["assets/sankalp-brochure.jpeg"]'
+          data-title="Sankalp Hospital"
+          data-desc="Bi-fold brochure &middot; Print &middot; Gujarati + English">
+          <div class="card-img-wrap">
+            <img src="assets/sankalp-brochure.jpeg" alt="Sankalp Hospital brochure" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Sankalp Hospital</h3><p>Brochure &middot; Print</p></div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="work-card" data-category="print"
+          data-pages='["assets/vedamrut-brochure.jpeg"]'
+          data-title="Vedamrut Ayurveda"
+          data-desc="Panchakarma clinic brochure &middot; Gujarati + English">
+          <div class="card-img-wrap">
+            <img src="assets/vedamrut-brochure.jpeg" alt="Vedamrut Ayurveda brochure" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Vedamrut Ayurveda</h3><p>Brochure &middot; Print</p></div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="work-card" data-category="social"
+          data-pages='["assets/navratri-post.jpeg"]'
+          data-title="Chaitra Navratri"
+          data-desc="Festival social media post &middot; Digital">
+          <div class="card-img-wrap">
+            <img src="assets/navratri-post.jpeg" alt="Navratri social post" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Chaitra Navratri</h3><p>Social Post &middot; Digital</p></div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="work-card" data-category="print"
+          data-pages='["assets/pearldent-brochure.jpeg"]'
+          data-title="PearlDent Dental Care"
+          data-desc="Dental clinic brochure &middot; Print &middot; Surat">
+          <div class="card-img-wrap">
+            <img src="assets/pearldent-brochure.jpeg" alt="PearlDent brochure" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>PearlDent Dental Care</h3><p>Brochure &middot; Print</p></div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="work-card" data-category="branding"
+          data-pages='["assets/dermaesthetic-logo.jpeg"]'
+          data-title="The Dermaesthetic Skin"
+          data-desc="Logo design &middot; Brand identity &middot; Skin clinic">
+          <div class="card-img-wrap">
+            <img src="assets/dermaesthetic-logo.jpeg" alt="Dermaesthetic logo" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>The Dermaesthetic Skin</h3><p>Logo &middot; Branding</p></div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="work-card" data-category="social"
+          data-pages='["assets/ramnavami-post-2.jpeg"]'
+          data-title="Ram Navami"
+          data-desc="Festival social media post &middot; Digital">
+          <div class="card-img-wrap">
+            <img src="assets/ramnavami-post-2.jpeg" alt="Ram Navami post" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Ram Navami</h3><p>Social Post &middot; Digital</p></div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="work-card" data-category="print"
+          data-pages='["assets/panchakarma-brochure.jpeg"]'
+          data-title="Pancha Karma"
+          data-desc="Inner brochure spread &middot; Ayurvedic treatments &middot; Gujarati">
+          <div class="card-img-wrap">
+            <img src="assets/panchakarma-brochure.jpeg" alt="Panchakarma brochure" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Pancha Karma</h3><p>Brochure &middot; Print</p></div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="work-card" data-category="social"
+          data-pages='["assets/worldcancerday-post.jpeg"]'
+          data-title="World Cancer Day"
+          data-desc="Awareness social post &middot; Digital">
+          <div class="card-img-wrap">
+            <img src="assets/worldcancerday-post.jpeg" alt="World Cancer Day post" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>World Cancer Day</h3><p>Social Post &middot; Digital</p></div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="work-card" data-category="print"
+          data-pages='["assets/myeelaaj-spread.jpeg"]'
+          data-title="My Eelaaj"
+          data-desc="Healthcare magazine spread &middot; Cardiology &middot; Gujarati + English">
+          <div class="card-img-wrap">
+            <img src="assets/myeelaaj-spread.jpeg" alt="My Eelaaj spread" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>My Eelaaj</h3><p>Magazine Spread &middot; Print</p></div>
+        </article>
+
+        <!-- ── Cards 10 to 24 (loaded via Load More) ── -->
+
+        <!-- Card 10 -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/shashwat-flyer.jpeg"]'
+          data-title="Shashwat Cardiac &amp; Cancer Care"
+          data-desc="Clinic promotional flyer &middot; Print &middot; Surat">
+          <div class="card-img-wrap">
+            <img src="assets/shashwat-flyer.jpeg" alt="Shashwat Cardiac flyer" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Shashwat Cardiac &amp; Cancer Care</h3><p>Flyer &middot; Print</p></div>
+        </article>
+
+        <!-- Card 11: ASOT Solar (Merged) -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/asot-thankyou-card.jpeg","assets/asot-packaging-card.jpeg"]'
+          data-title="ASOT Solar — Product Inserts"
+          data-desc="Amazon customer thank-you card &amp; packaging insert &middot; 2 pages &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/asot-thankyou-card.jpeg" alt="ASOT Solar insert card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+            <span class="card-page-badge">2 pages</span>
+          </div>
+          <div class="card-info"><h3>ASOT Solar</h3><p>Product Inserts &middot; Print</p></div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/amoha-envelope.jpeg"]'
+          data-title="Amoha Couture — Branded Envelope"
+          data-desc="Stationery design &middot; Branded envelope &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/amoha-envelope.jpeg" alt="Amoha Couture envelope" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Amoha Couture</h3><p>Envelope &middot; Stationery</p></div>
+        </article>
+
+        <!-- Card 13 -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/drnirav-envelope.jpeg"]'
+          data-title="Dr. Nirav's Homeopathic Healing"
+          data-desc="Clinic branded envelope &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/drnirav-envelope.jpeg" alt="Dr Nirav envelope" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Dr. Nirav's Homeopathic</h3><p>Envelope &middot; Stationery</p></div>
+        </article>
+
+        <!-- Card 14 -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/omera-brochure.jpeg"]'
+          data-title="Omera Clinic"
+          data-desc="Skin, hair &amp; body clinic bi-fold brochure &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/omera-brochure.jpeg" alt="Omera Clinic brochure" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Omera Clinic</h3><p>Brochure &middot; Print</p></div>
+        </article>
+
+        <!-- Card 15: Ajmera Trends (Merged) -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/ajmera-calendar-feb.jpeg","assets/ajmera-calendar-apr.jpeg"]'
+          data-title="Ajmera Trends — Wall Calendar"
+          data-desc="Fashion brand wall calendar &middot; February &amp; April 2026 &middot; 2 pages &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/ajmera-calendar-feb.jpeg" alt="Ajmera Trends calendar" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+            <span class="card-page-badge">2 pages</span>
+          </div>
+          <div class="card-info"><h3>Ajmera Trends</h3><p>Calendar &middot; Print</p></div>
+        </article>
+
+        <!-- Card 16 -->
+        <article class="work-card load-more-card" data-category="branding"
+          data-pages='["assets/drvaghani-businesscard.jpeg"]'
+          data-title="Dr. Sanjay Vaghani Cardiology"
+          data-desc="Cardiologist business card &middot; Front &amp; back &middot; Branding">
+          <div class="card-img-wrap">
+            <img src="assets/drvaghani-businesscard.jpeg" alt="Dr Sanjay Vaghani business card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Dr. Sanjay Vaghani</h3><p>Business Card &middot; Branding</p></div>
+        </article>
+
+        <!-- Card 17 -->
+        <article class="work-card load-more-card" data-category="branding"
+          data-pages='["assets/drvasim-businesscard.jpeg"]'
+          data-title="Dr. Vasim's Advanced Medicine Hospital"
+          data-desc="Hospital brand business card &middot; Front &amp; back &middot; Branding">
+          <div class="card-img-wrap">
+            <img src="assets/drvasim-businesscard.jpeg" alt="Dr Vasim business card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Dr. Vasim's Advanced Medicine</h3><p>Business Card &middot; Branding</p></div>
+        </article>
+
+        <!-- Card 18 -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/pharmagic-product-list.jpeg"]'
+          data-title="Pharmagic Pharmaceuticals"
+          data-desc="Pharmaceutical product catalogue sheet &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/pharmagic-product-list.jpeg" alt="Pharmagic product list" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Pharmagic Pharmaceuticals</h3><p>Product List &middot; Print</p></div>
+        </article>
+
+        <!-- Card 19: Akhand Anand Co-Op Bank (Merged) -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/akhand-anand-calendar.jpeg","assets/akhand-anand-calendar-sep.jpeg"]'
+          data-title="Akhand Anand Co-Op Bank — Calendar"
+          data-desc="Co-operative bank Gujarati calendar &middot; August &amp; September 2026 &middot; 2 pages &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/akhand-anand-calendar.jpeg" alt="Akhand Anand calendar" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+            <span class="card-page-badge">2 pages</span>
+          </div>
+          <div class="card-info"><h3>Akhand Anand Co-Op Bank</h3><p>Calendar &middot; Print</p></div>
+        </article>
+
+        <!-- Card 20 -->
+        <article class="work-card load-more-card" data-category="branding"
+          data-pages='["assets/dermacode-businesscard.jpeg"]'
+          data-title="Derma Code by Dr. Parth"
+          data-desc="Dermatology clinic business card &middot; Front &amp; back &middot; Branding">
+          <div class="card-img-wrap">
+            <img src="assets/dermacode-businesscard.jpeg" alt="Derma Code business card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Derma Code by Dr. Parth</h3><p>Business Card &middot; Branding</p></div>
+        </article>
+
+        <!-- Card 21 -->
+        <article class="work-card load-more-card" data-category="branding"
+          data-pages='["assets/orin-businesscard.jpeg"]'
+          data-title="Orin PV Materials"
+          data-desc="Solar materials company business card &middot; Front &amp; back &middot; Branding">
+          <div class="card-img-wrap">
+            <img src="assets/orin-businesscard.jpeg" alt="Orin PV business card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Orin PV Materials</h3><p>Business Card &middot; Branding</p></div>
+        </article>
+
+        <!-- Card 22 -->
+        <article class="work-card load-more-card" data-category="social"
+          data-pages='["assets/prarthana-dental-poster.jpeg"]'
+          data-title="Prarthana Dental Clinic — Camp Poster"
+          data-desc="Free dental check-up camp event poster &middot; Gujarati &middot; Social">
+          <div class="card-img-wrap">
+            <img src="assets/prarthana-dental-poster.jpeg" alt="Prarthana Dental camp poster" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Prarthana Dental Clinic</h3><p>Event Poster &middot; Social</p></div>
+        </article>
+
+        <!-- Card 23: Tricolour Hospitals (Merged) -->
+        <article class="work-card load-more-card" data-category="print"
+          data-pages='["assets/tricolour-calendar-feb.jpeg","assets/tricolour-calendar-apr.jpeg"]'
+          data-title="Tricolour Hospitals — Wall Calendar"
+          data-desc="Hospital wall calendar &middot; February &amp; April 2026 &middot; 2 pages &middot; Print">
+          <div class="card-img-wrap">
+            <img src="assets/tricolour-calendar-feb.jpeg" alt="Tricolour Hospitals calendar" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+            <span class="card-page-badge">2 pages</span>
+          </div>
+          <div class="card-info"><h3>Tricolour Hospitals</h3><p>Calendar &middot; Print</p></div>
+        </article>
+
+        <!-- Card 24 -->
+        <article class="work-card load-more-card" data-category="branding"
+          data-pages='["assets/anant-ayurveda-businesscard.jpeg"]'
+          data-title="Anant Ayurveda Panchkarma Hospital"
+          data-desc="Ayurvedic hospital business card &middot; Front &amp; back &middot; Branding">
+          <div class="card-img-wrap">
+            <img src="assets/anant-ayurveda-businesscard.jpeg" alt="Anant Ayurveda business card" loading="lazy" decoding="async" />
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-info"><h3>Anant Ayurveda</h3><p>Business Card &middot; Branding</p></div>
+        </article>
+
+      </div><!-- /workGrid -->
+
+      <!-- Load More Button -->
+      <div class="load-more-wrap" id="loadMoreWrap">
+        <button class="btn-load-more mag-target" id="loadMoreBtn">Load More</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT -->
+  <section id="featured">
+    <div class="featured-label-wrap">
+      <span class="section-label reveal-heading">Featured Project</span>
+    </div>
+    <div class="featured-inner">
+      <div class="featured-text">
+        <span class="featured-num">01</span>
+        <h2 class="featured-title reveal-heading">Sankalp <br /><em>Hospital</em></h2>
+        <p class="featured-desc reveal-heading">A complete bilingual brochure for Sankalp Hospital &mdash; a maternity, infertility and laparoscopy clinic in Surat. The layout balances Gujarati script with Latin typefaces, guiding patients through services with warmth and clinical precision.</p>
+        <ul class="featured-tags reveal-heading">
+          <li>Print Design</li>
+          <li>Gujarati Typography</li>
+          <li>Layout</li>
+          <li>Print-ready PDF</li>
+        </ul>
+        <button class="featured-open btn-secondary mag-target"
+          data-pages='["assets/sankalp-brochure.jpeg"]'
+          data-title="Sankalp Hospital Brochure"
+          data-desc="Bi-fold brochure &middot; Gujarati + English">Open Full View</button>
+      </div>
+      <div class="featured-image-wrap" id="featuredImgWrap">
+        <div class="featured-parallax-img" id="featuredParallax">
+          <img src="assets/sankalp-brochure.jpeg" alt="Sankalp Hospital brochure full spread" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS STRIP -->
+  <section id="skills">
+    <div class="skills-strip">
+      <div class="skills-track">
+        <span class="skill-item">Branding</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Layout Design</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Social Media</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Gujarati Typography</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">English Typography</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Print-ready Files</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Branding</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Layout Design</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Social Media</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Gujarati Typography</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">English Typography</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+        <span class="skill-item">Print-ready Files</span>
+        <span class="skill-sep" aria-hidden="true">&#10022;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + CONTACT -->
+  <section id="about">
+    <div class="container about-grid">
+      <!-- Profile Photo -->
+      <div class="about-photo-col">
+        <div class="about-photo-frame" id="aboutPhotoFrame">
+          <img
+            class="about-photo-img"
+            src="assets/profile/dolly-profile.jpg"
+            alt="Dolly Kesharwani — Graphic Designer"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- About Text -->
+      <div class="about-text">
+        <span class="section-label reveal-heading">About</span>
+        <h2 class="section-title reveal-heading">Design that <em>speaks</em></h2>
+        <p class="reveal-heading">Hi, I am <strong>Dolly Kesharwani</strong> &mdash; a graphic designer from Surat crafting visual identities for healthcare, wellness, and lifestyle brands. I specialise in bilingual print design, brand collateral, and social media creatives that balance cultural sensitivity with clean, purposeful aesthetics.</p>
+        <p class="reveal-heading">I believe every visual should earn its space: purposeful composition, culturally sensitive typography, and print-ready precision across every deliverable.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">300<em>+</em></span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Year Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="contact-block">
+        <span class="section-label reveal-heading">Contact</span>
+        <h2 class="section-title reveal-heading">Let's create <em>together</em></h2>
+        <p class="reveal-heading">Got a project in mind? I'd love to hear about it. Drop me a message on WhatsApp or send an email.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/916353068671?text=Hi%20Dolly%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20a%20design%20project." target="_blank" rel="noopener noreferrer" class="btn-whatsapp mag-target">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Me
+          </a>
+          <a href="mailto:dollykesharwani09@gmail.com?subject=Portfolio%20Enquiry" class="btn-secondary mag-target">dollykesharwani09@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">DK<span class="accent">.</span></p>
+      <p class="footer-copy">&copy; 2026 Dolly Kesharwani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX with Previous / Next navigation -->
+  <div id="lightbox" aria-modal="true" role="dialog" aria-label="Image lightbox">
+    <button id="lb-close" class="mag-target" aria-label="Close">&times;</button>
+    <button id="lb-prev" class="mag-target" aria-label="Previous page">&#8249;</button>
+    <button id="lb-next" class="mag-target" aria-label="Next page">&#8250;</button>
+    <div id="lb-inner">
+      <img id="lb-img" src="" alt="" />
+      <div id="lb-caption">
+        <h3 id="lb-title"></h3>
+        <p id="lb-desc"></p>
+        <span id="lb-counter" class="lb-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Lenis + GSAP + ScrollTrigger + ScrollToPlugin -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

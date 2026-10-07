@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: Dolly-kesharwani09/Dolly-kesharwani09.github.io
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: portfolio
+    label: Portfolio Content
+    files:
+      - name: works_data
+        label: Works
+        file: data/works.json
+        format: json
+        fields:
+          - name: works
+            label: Design Works
+            label_singular: Work
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - name: title
+                label: Project Title
+                widget: string
+                hint: "Name of the design project (e.g. Sankalp Hospital)"
+
+              - name: client
+                label: Client Name
+                widget: string
+                hint: "Name of the client or company"
+
+              - name: type
+                label: Deliverable Type
+                widget: string
+                hint: "Short description of the deliverable (e.g. Bi-fold brochure · Print · Gujarati + English)"
+
+              - name: category
+                label: Category
+                widget: select
+                options:
+                  - Branding
+                  - Print
+                  - Social
+                hint: "Category tab to display under on the website"
+
+              - name: image
+                label: Cover Photo
+                widget: image
+                hint: "Main photo of the design (JPG or WebP, under 1 MB, ~1600px wide)"
+
+              - name: pages
+                label: Extra Pages / Views
+                widget: list
+                required: false
+                hint: "Optional list of photos for multi-page works like calendars or multi-sided prints"
+                field:
+                  name: page
+                  label: Page Photo
+                  widget: image
+
+              - name: featured
+                label: Featured on Homepage
+                widget: boolean
+                default: false
+                required: false
+                hint: "Spotlight this project in the Featured Project section"
+
+              - name: order
+                label: Display Order
+                widget: number
+                value_type: int
+                default: 1
+                hint: "Order number (1 displays first, 2 displays second, etc.)"
